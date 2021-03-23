@@ -1,0 +1,39 @@
+//Entrada: a, b, c.
+//Saída: x' e x''
+//Processamento: cálculo.
+
+#include<stdio.h>//biblioteca para entrada e saída de dados: printf e scanf
+#include<math.h>//biblioteca matemática
+
+int main (){//início do algoritmo: função main
+	double a, b, c, delta, x1, x2;//int %d ou %i -> float %f -> double %lf (variáveis)
+	
+	printf ("digite o valor de a:"); //impressão do texto para o usuário.
+	scanf("%lf", &a); //código formatação - codigo de endereço - variável (a).
+	
+	printf ("digite o valor de b:"); //impressão do texto para o usuário.
+	scanf("%lf", &b); //código formatação - codigo de endereço - variável (b).
+	
+	printf ("digite o valor de c:"); //impressão do texto para o usuário.
+	scanf("%lf", &c); //código formatação - codigo de endereço - variável (c).
+	
+	delta = (pow(b, 2)) - 4 * a * c; // linearizar delta (potência - pow).
+
+if(a == 0) //== (igual) != (diferente) < (menor) > (maior) <=(menor igual) >= (maior igual).
+	{
+	printf("impossível calcular\n"); //impressão do texto para o usuário.
+
+}else if(delta == 0){ //quando delta for igual a zero, ou seja, um valor de X.
+	x1 = (-(b) + sqrt(delta)) / 2 * a; // linearizar bhaskara (sqrt - raiz quadrada).
+	printf("Os valores sao: \nX1: %.2lf \nX2: %.2lf", x1, x1); // impressão do texto para o usuário (X1 e X2).
+
+}else//senão
+	{
+	x1 = (-(b) + sqrt(b * b - 4 * a * c)) / (2 * a); //linearizar bhaskara (x1), (sqrt - raiz quadrada)
+	x1 = (-(b) - sqrt(b * b - 4 * a * c)) / (2 * a); //linearizar bhaskara (x2), (sqrt - raiz quadrada)
+	}
+	printf("x1 = %.2lf \tx2 = %.4lf\n", x1, x2);
+	
+//return 0;//retorno da função
+}//final do algoritmo
+
