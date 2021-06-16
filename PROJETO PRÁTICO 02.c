@@ -1,14 +1,14 @@
-// Nome: Bianca LetÌcia Moura Silva
-// MatrÌcula: UC21103715
-// Curso: CiÍncia da ComputaÁ„o
+// Nome: Bianca Let√≠cia Moura Silva
+// Matr√≠cula: UC21103715
+// Curso: Ci√™ncia da Computa√ß√£o
 
-#include <stdio.h> // Biblioteca para anexar a funÁ„o "main()".
+#include <stdio.h> // Biblioteca para anexar a fun√ß√£o "main()".
 #include <string.h> // Biblioteca de strings.
 #include <ctype.h> // Biblioteca para classificar caracteres.
-#include <locale.h> // Biblioteca para lÌngua portuguesa.
-#include <math.h> // Biblioteca para operaÁıes matem·ticas.
-#include <stdlib.h> // Biblioteca para funÁıes e constantes b·sicas.
-#include <stdbool.h> // Biblioteca para manipular vari·veis lÛgicas.
+#include <locale.h> // Biblioteca para l√≠ngua portuguesa.
+#include <math.h> // Biblioteca para opera√ß√µes matem√°ticas.
+#include <stdlib.h> // Biblioteca para fun√ß√µes e constantes b√°sicas.
+#include <stdbool.h> // Biblioteca para manipular vari√°veis l√≥gicas.
 
 // Definir as cores verde, vermelho, azul e branco.
 #define ANSI_COLOR_RED "\x1b[31m"
@@ -20,29 +20,29 @@ int main(){
    
     setlocale(LC_ALL, "Portuguese");
 
-    int quantdeAssentos=0, opcaoMenu=0, idade, ocupadas, disponivel, confirmada, contadorIdentificador=1, l, e; // DeclaraÁ„o de variavÈis para matriz, menu, idade e assentos.
-    float valorPassagem, desconto, valorTotal; // DeclaraÁ„o de variavÈis para a passagem.
-    char nomeDestino[100]; // DeclaraÁ„o de variavÈis para o destino.
+    int quantdeAssentos=0, opcaoMenu=0, idade, ocupadas, disponivel, confirmada, contadorIdentificador=1, l, e; // Declara√ß√£o de variav√©is para matriz, menu, idade e assentos.
+    float valorPassagem, desconto, valorTotal; // Declara√ß√£o de variav√©is para a passagem.
+    char nomeDestino[100]; // Declara√ß√£o de variav√©is para o destino.
     
     
-    printf ("SALUMAR LINHAS A…REAS\n\n");
+    printf ("SALUMAR LINHAS A√âREAS\n\n");
     
     // Solicitando o nome do destino.
-    printf("\n\n|1∫ PASSO| INFORME O NOME DO DESTINO: ");
+    printf("\n\n|1¬∫ PASSO| INFORME O NOME DO DESTINO: ");
     do{
         fgets(nomeDestino, 100, stdin);
     if(strlen(nomeDestino)<=0){
-        printf("\n\nNOME DO DESTINO INV¡LIDO! INFORME NOVAMENTE: ");
+        printf("\n\nNOME DO DESTINO INV√ÅLIDO! INFORME NOVAMENTE: ");
     }
     }
     while(strlen(nomeDestino)<=1);
     
-    // Solicitando a quantidade de assentos existente para o avi„o selecionado para tal destino.
-    printf("\n\n|2∫ PASSO| DIGITE A QUANTIDADE DE ASSENTOS EXISTENTE NO AVI√O: ");
+    // Solicitando a quantidade de assentos existente para o avi√£o selecionado para tal destino.
+    printf("\n\n|2¬∫ PASSO| DIGITE A QUANTIDADE DE ASSENTOS EXISTENTE NO AVI√ÉO: ");
     do{
         scanf("%d",&quantdeAssentos);
     if(quantdeAssentos<90 || quantdeAssentos>200){
-        printf("\n\nQUANTIDADE DE ASSENTOS INV¡LIDO! DIGITE NOVAMENTE: ");
+        printf("\n\nQUANTIDADE DE ASSENTOS INV√ÅLIDO! DIGITE NOVAMENTE: ");
     }
     }
     while(quantdeAssentos<90 || quantdeAssentos>200);
@@ -56,7 +56,7 @@ int main(){
     }
 
 	// Solicitando o valor da passagem. 
-    printf("\n\n|3∫ PASSO| INFORME O VALOR DA PASSAGEM: R$");
+    printf("\n\n|3¬∫ PASSO| INFORME O VALOR DA PASSAGEM: R$");
     fflush(stdin);
     scanf("%f",&valorPassagem);
     desconto = 0.5 * valorPassagem;
@@ -67,21 +67,21 @@ system("cls");
     do{
 system ("cls");
         printf("MENU PRINCIPAL \n\n\n");
-        printf("|1| VERIFICAR A OCUPA«√O DO VOO \n\n");
+        printf("|1| VERIFICAR A OCUPA√á√ÉO DO VOO \n\n");
         printf("|2| EFETUAR UMA RESERVA \n\n");
         printf("|3| REALIZAR O CANCELAMENTO DE UMA RESERVA \n\n");
-        printf("|4| EFETIVAR A CONFIRMA«√O DE UMA RESERVA \n\n");
-        printf("|5| MOSTRAR A QUANTIDADE DE ASSENTOS RESERVADOS, CONFIRMADOS, DISPONÕVEIS E O VALOR TOTAL DE VENDAS DE %s ", nomeDestino);
+        printf("|4| EFETIVAR A CONFIRMA√á√ÉO DE UMA RESERVA \n\n");
+        printf("|5| MOSTRAR A QUANTIDADE DE ASSENTOS RESERVADOS, CONFIRMADOS, DISPON√çVEIS E O VALOR TOTAL DE VENDAS DE %s ", nomeDestino);
         printf("\n|6| FECHAR O PROGRAMA \n\n");
-        printf("\nDIGITE A OP«√O DESEJADA: ");
+        printf("\nDIGITE A OP√á√ÉO DESEJADA: ");
         scanf("%d", &opcaoMenu);
    
 system ("cls");
 
-	// Estrutura para decidir entre v·rias sequÍncias de comandos quais ser„o executadas.
+	// Estrutura para decidir entre v√°rias sequ√™ncias de comandos quais ser√£o executadas.
     switch(opcaoMenu){ 
 
-		// SequÍncia de instruÁıes para mostrar o mapa de lugares.
+		// Sequ√™ncia de instru√ß√µes para mostrar o mapa de lugares.
         case 1: 
             printf("|MAPA DOS LUGARES|\n\n");
             
@@ -101,23 +101,23 @@ system ("cls");
             printf("\n");
         break;
 
-		// SequÍncia de instruÁıes para efetuar a reserva.
+		// Sequ√™ncia de instru√ß√µes para efetuar a reserva.
         case 2: 
             printf("|EFETUAR UMA RESERVA|\n\n");
             
-            printf("\nINFORME O N⁄MERO DO ASSENTO: ");
+            printf("\nINFORME O N√öMERO DO ASSENTO: ");
             scanf("%d", &e);
         
             printf("\nINFORME A IDADE DO PASSAGEIRO: ");
             scanf ("%d", &idade);
         
             if(e<1 || e>200){
-               printf("\nN⁄MERO DO ASSENTO INV¡LIDO! DIGITE NOVAMENTE: \n");
+               printf("\nN√öMERO DO ASSENTO INV√ÅLIDO! DIGITE NOVAMENTE: \n");
             break;
             }
             
             if(matriz[e-1] != 'D'){
-                printf("\nASSENTO INDISPONÕVEL!\n");
+                printf("\nASSENTO INDISPON√çVEL!\n");
                 break;
             }
             else{
@@ -129,15 +129,15 @@ system ("cls");
                     break;
             }
                 
-            printf("\nASSENTO RESERVADO COM SUCESSO! \n\nSEU N⁄MERO IDENTIFICADOR PARA CANCELAMENTO E CONFIRMA«√O DA RESERVA …: %d\n", contadorIdentificador);
+            printf("\nASSENTO RESERVADO COM SUCESSO! \n\nSEU N√öMERO IDENTIFICADOR PARA CANCELAMENTO E CONFIRMA√á√ÉO DA RESERVA √â: %d\n", contadorIdentificador);
                 
             if(idade<=5){
                 desconto = 0.5 * valorPassagem;
-                printf ("\nO VALOR DA PASSAGEM COM DESCONTO … R$%.2f\n", desconto);
+                printf ("\nO VALOR DA PASSAGEM COM DESCONTO √â R$%.2f\n", desconto);
                 Cliente[l][2] = desconto;
             }
             else{
-            printf ("\nO VALOR DA PASSAGEM … R$%.2f\n", valorPassagem);
+            printf ("\nO VALOR DA PASSAGEM √â R$%.2f\n", valorPassagem);
                 Cliente[l][2] = valorPassagem;
             }
             
@@ -146,11 +146,11 @@ system ("cls");
             contadorIdentificador++;
         break;
     
-        // SequÍncia de instruÁıes para cancelar uma reserva.
+        // Sequ√™ncia de instru√ß√µes para cancelar uma reserva.
         case 3: 
             printf("|REALIZAR O CANCELAMENTO DE UMA RESERVA|\n\n");
             do{
-                printf ("INFORME O N⁄MERO IDENTIFICADOR PARA REALIZAR O CANCELAMENTO DE UMA RESERVA: ");
+                printf ("INFORME O N√öMERO IDENTIFICADOR PARA REALIZAR O CANCELAMENTO DE UMA RESERVA: ");
                 scanf("%d", &e);
             }while(e < 1);
             
@@ -159,12 +159,12 @@ system ("cls");
                     break;
             }
             if (l == quantdeAssentos){
-                printf("\nCLIENTE N√O ENCONTRADO.");
+                printf("\nCLIENTE N√ÉO ENCONTRADO.");
                 break;
             }
                 
             if(matriz[Cliente[l][1]] == 'C'){
-                printf("\nN√O FOI POSSÕVEL REALIZAR O CANCELAMENTO!\n");
+                printf("\nN√ÉO FOI POSS√çVEL REALIZAR O CANCELAMENTO!\n");
             }
             else{
                 matriz[Cliente[l][1]] = 'D';
@@ -173,11 +173,11 @@ system ("cls");
             }
         break;
         
-    	// SequÍncia de instruÁıes para confirmar uma reserva.
+    	// Sequ√™ncia de instru√ß√µes para confirmar uma reserva.
         case 4:
-            printf("|EFETIVAR A CONFIRMA«√O DE VENDA DE UMA RESERVA|\n\n");
+            printf("|EFETIVAR A CONFIRMA√á√ÉO DE VENDA DE UMA RESERVA|\n\n");
         
-            printf ("INFORME O N⁄MERO IDENTIFICADOR PARA EFETIVAR A CONFIRMA«√O DE VENDA DE UMA RESERVA: ");
+            printf ("INFORME O N√öMERO IDENTIFICADOR PARA EFETIVAR A CONFIRMA√á√ÉO DE VENDA DE UMA RESERVA: ");
             scanf("%d", &e);
             
             for(l = 0; l < quantdeAssentos; l++){
@@ -186,17 +186,17 @@ system ("cls");
             }
             
             if(matriz[Cliente[l][1]] == 'D'){
-            printf("\nN√O FOI POSSÕVEL REALIZAR A CONFIRMA«√O!\n");
+            printf("\nN√ÉO FOI POSS√çVEL REALIZAR A CONFIRMA√á√ÉO!\n");
             }
             else{
             matriz[Cliente[l][1]] = 'C';
-            printf("A CONFIRMA«√O DE VENDA DE UMA RESERVA FOI EFETIVADA!\n\n");
+            printf("A CONFIRMA√á√ÉO DE VENDA DE UMA RESERVA FOI EFETIVADA!\n\n");
             }
         break;
     
-        // SequÍncia de instruÁıes para mostrar a quantidade de assentos reservados, disponÌveis, confirmados e o valor total de vendas.   
+        // Sequ√™ncia de instru√ß√µes para mostrar a quantidade de assentos reservados, dispon√≠veis, confirmados e o valor total de vendas.   
         case 5:
-            printf("|MOSTRAR A QUANTIDADE DE ASSENTOS RESERVADOS, CONFIRMADOS, DISPONÕVEIS E O VALOR TOTAL DE VENDAS DE %s|\n\n", nomeDestino);
+            printf("|MOSTRAR A QUANTIDADE DE ASSENTOS RESERVADOS, CONFIRMADOS, DISPON√çVEIS E O VALOR TOTAL DE VENDAS DE %s|\n\n", nomeDestino);
             
 			confirmada = 0;
             disponivel = 0;
@@ -215,10 +215,10 @@ system ("cls");
                 if(Cliente[e][0] != 0)
                     valorTotal += Cliente[e][2];
             }
-            printf("ASSENTOS DISPONÕVEIS: %d \nASSENTOS RESERVADOS: %d \nASSENTOS CONFIRMADOS: %d \n\nVALOR TOTAL DE VENDAS: R$%2.f", disponivel, ocupadas, confirmada, valorTotal);
+            printf("ASSENTOS DISPON√çVEIS: %d \nASSENTOS RESERVADOS: %d \nASSENTOS CONFIRMADOS: %d \n\nVALOR TOTAL DE VENDAS: R$%2.f", disponivel, ocupadas, confirmada, valorTotal);
         break;
     
-    	// SequÍncia de instruÁıes para fechar o programa.
+    	// Sequ√™ncia de instru√ß√µes para fechar o programa.
         case 6:	
 			printf("|BYE BYE|\n");
             
