@@ -1,4 +1,4 @@
-// 2. Desenvolva um programa em C que leia três valores numéricos e apresente o maior valor informado no meio de uma janela limpa.
+// 2. Desenvolva um programa em C que leia trÃªs valores numÃ©ricos e apresente o maior valor informado no meio de uma janela limpa.
 
 #include <stdio.h>
 #include <string.h> 
@@ -37,7 +37,7 @@ int main() {
 
 system("cls"); 	
 		
-	printf ("Maior número: %d", maior);
+	printf ("Maior nÃºmero: %d", maior);
 
 return 0;
 
