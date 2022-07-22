@@ -1,4 +1,4 @@
-// 3. Faça um programa que leia um caractere e apresente o caractere lido na forma caractere, decimal, octal e hexadecimal, sendo um em cada linha.
+// 3. FaÃ§a um programa que leia um caractere e apresente o caractere lido na forma caractere, decimal, octal e hexadecimal, sendo um em cada linha.
 
 #include <stdio.h>
 #include <stdlib.h>
