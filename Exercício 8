@@ -1,4 +1,4 @@
-// 7. Faça um programa que leia três valores numéricos e os mostre em ordem crescente.
+// 7. FaÃ§a um programa que leia trÃªs valores numÃ©ricos e os mostre em ordem crescente.
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -13,7 +13,7 @@ int main(){
 	int contador, num[3], aux, b;
 
 	for (contador = 0; contador < 3; contador++){
-	printf ("Digite o número %d: ", contador + 1);
+	printf ("Digite o nÃºmero %d: ", contador + 1);
 	scanf ("%d", &num[contador]);
 	}
 	
@@ -27,7 +27,7 @@ int main(){
 	}			
 	num[aux] = b;
 
-	printf ("A ordem crescente é: %d, %d, %d", num[0], num[1], num[2]);
+	printf ("A ordem crescente Ã©: %d, %d, %d", num[0], num[1], num[2]);
 	
 return 0;
 	
