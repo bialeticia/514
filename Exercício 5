@@ -1,6 +1,6 @@
-// 4. Uma loja de mÛveis de inform·tica est· necessitando de um sistema que identifique quais mÛveis de inform·tica est„o sendo solicitados pelos seus clientes. 
-// Os mÛveis disponibilizados por esta empresa s„o: 1-cadeira, 2-mesa de computador, 3-estante de livros, 4-mesa de impressora e 5-estante de CD. 
-// Quando se tratar de um mÛvel que n„o exista na empresa informe ao cliente que ainda n„o est· disponÌvel.
+// 4. Uma loja de m√≥veis de inform√°tica est√° necessitando de um sistema que identifique quais m√≥veis de inform√°tica est√£o sendo solicitados pelos seus clientes. 
+// Os m√≥veis disponibilizados por esta empresa s√£o: 1-cadeira, 2-mesa de computador, 3-estante de livros, 4-mesa de impressora e 5-estante de CD. 
+// Quando se tratar de um m√≥vel que n√£o exista na empresa informe ao cliente que ainda n√£o est√° dispon√≠vel.
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -25,7 +25,7 @@ int main(){
         printf("|4| Mesa de impressora \n\n");
         printf("|5| Estante de CD \n\n");
         printf("|6| Quantidades e total ");
-        printf("\n\nDIGITE A OP«√O DESEJADA: ");
+        printf("\n\nDIGITE A OP√á√ÉO DESEJADA: ");
         scanf("%d", &opcaoMenu);
 	
 	 switch(opcaoMenu){
@@ -72,7 +72,7 @@ int main(){
     	printf("\nQuantidade de livros solicitadas: %d", livros);
     	printf("\nQuantidade de mesas de impressora solicitadas: %d", mesadeImpressora);
 		printf("\nQuantidade de CDS solicitadas: %d", cd);
-    	printf ("\nTotal de solicitaÁıes: %f", total);
+    	printf ("\nTotal de solicita√ß√µes: %f", total);
 	
 	break;
 		
