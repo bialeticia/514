@@ -1,7 +1,3 @@
-// Nome: Bianca Letícia Moura Silva
-// Matrícula: UC21103715
-// Curso: Ciência da Computação
-
 #include <stdio.h> // Biblioteca para anexar a função "main()".
 #include <string.h> // Biblioteca de strings.
 #include <ctype.h> // Biblioteca para classificar caracteres.
