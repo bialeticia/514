@@ -1,5 +1,5 @@
-// 5. FaÁa um programa que pergunte ao usu·rio qual a letra inicial do seu sexo (masculino/feminino) e escreva por extenso o sexo informado, 
-// usando o operador condicional tern·rio.
+// 5. Fa√ßa um programa que pergunte ao usu√°rio qual a letra inicial do seu sexo (masculino/feminino) e escreva por extenso o sexo informado, 
+// usando o operador condicional tern√°rio.
 
 #include <stdio.h>
 #include <stdlib.h>
